@@ -1,0 +1,330 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+    background-color: #282526;
+
+}
+/* NAVBAR */
+
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: transparent;
+    width: 100%;
+    height: 75px;
+    z-index: 1;
+    font-family: 'japonesa';
+}
+.nav{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 15%;
+}
+
+/* LOGO */
+
+.logo{
+    flex: 1 1 auto;
+    margin-left: 10%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'japonesa';
+
+}
+a{
+    margin: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a:hover{
+    color: rgb(207, 14, 14);
+}
+
+/* HOME ABOUT PROJECTS AND CONTACT */
+
+.banner-area{
+    position: relative;
+    background-image: url(samurai.jpg);
+width: 100%;
+height: 100vh;
+background-repeat: no-repeat;
+-webkit-background-size: cover;
+background-size: cover;
+}
+
+.about-area, .projects-area, .social-media-area{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+    font-family: 'japonesa';
+
+}
+
+.text-part{
+    width: 65%;
+    height: 80%;
+}
+
+.text-part h1{
+    font-size: 70px;
+    font-family: 'japonesa';
+    color:rgb(192, 15, 15) ;
+}
+
+p{
+    font-size: 22px;
+    line-height: 50px;
+
+}
+
+.about-area{
+    background:282526;
+    color: #fefefe;
+    margin-left: -15%;
+}
+
+.projects-area {
+    background-color: #5d5a5a;
+    width: 100%;
+    color: #db0d21;
+    
+}
+
+.social-media-area{
+    background: #282526;
+    color: #fefefe;
+}
+
+
+
+
+
+
+
+
+
+
+/* I'm a ...... */
+
+.what{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.what h1{
+    padding: 0;
+    margin: auto;
+    color: #000000;
+    text-shadow: 0 2px 0 rgb(255, 255, 255);
+    font-size: 60px;
+
+    font-family: 'japonesa';
+
+}
+
+
+
+.what a{
+    background: crimson;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    display:inline-block;
+    margin-top: 30px;
+}
+
+span:before{
+    content: '';
+    animation: animate infinite 10s;
+
+}
+
+@keyframes animate{
+    0%{
+        content: 'Web Developer';
+    }
+    25%{
+        content: 'Programmer';
+    }
+    50%{
+        content: 'Gamer';
+    }
+    75%{
+        content: 'Youtuber';
+    }
+    100%{
+        content: 'Student';
+    }
+    
+}
+
+
+
+/* PROJECTS AREA */
+
+.maincontainer{
+    position: relative;
+    width: 250px;
+    height: 320px;
+  
+}
+
+
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    
+}
+
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+
+.front{
+    position: absolute;
+    height:100% ;
+    width: 100%;
+    backface-visibility: hidden;
+    background: rgb(169, 20, 20);
+    color: #f8f4f4;
+    text-align: center;
+    font-family: 'japonesa';
+    border-radius:20px ;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.back{
+    position: absolute;
+    height:100% ;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #050404;
+    color:rgb(253, 253, 253);
+    text-align: center;
+    font-family: 'japonesa';
+    border-radius:20px ;
+    font-size: 18px;
+    font-weight: bold;
+    transform: rotateY(180deg);
+}
+
+/* social media */
+
+.social-media-area{
+    width: 100%;
+    
+   align-items: center;
+}
+
+.profile-box{
+    background: rgb(0, 0, 0);
+    text-align: center;
+    justify-content: center;
+     padding: 40px 90px;
+     color: #fff;
+     position: relative;
+     border-radius: 20px;
+     
+     position: absolute;
+    
+}
+
+.profile-box h3{
+    font-size: 26px;
+}
+
+.menu-icon{
+    width: 25px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+.setting-icon{
+    width: 25px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+.profile-pic{
+    width: 100px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+    margin-top: 40px;
+
+}
+
+.button1 {
+    background: none;
+    border-radius: .3em;  
+    left: 40%;
+    position: absolute;
+    margin-top: 0%;
+    color: aliceblue;
+    padding: 5px 12px;
+    border-color: white;
+    cursor: pointer;
+   
+   
+  }
+
+
+.button1 a{
+    color: #ffffff;
+    transition: color 0.2s;
+    margin: 5px 2px;
+    
+
+  }
+
+.button1 a:hover{
+    color: #c20909;
+  }
+
+
+.button1 {
+    top: 10px;
+    font-size: 27px;
+    position: relative;
+    margin-left: -114px;
+    margin-top: -27px;
+  }
+
+
+
+
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
